@@ -46,10 +46,6 @@ int plusGrand(int a, int b, int c)
 }
 
 
-
-
-
-
 //Fonctions réalisées par l'étudiant 2 :
 
 bool estPair(int nb)
