@@ -99,11 +99,41 @@ int plusPetit(int a, int b, int c)
 }
 
 
-
-
-
-
-
-
-
 //Fonctions réalisées par l'étudiant 3 :
+bool estImpair(int nb)
+{
+	if (nb % 2 != 0)
+	{
+		nb = true;
+	}
+	else{ nb = false; }
+}
+
+float moyenne(int nb1, int nb2, int nb3)
+{
+	float moyenne;
+	moyenne = (nb1 + nb2 + nb3) / 3;
+	return moyenne;
+}
+
+float reduction(int prix, int reduc)
+{
+	float prixreduit;
+	float temp = 1 - (reduc / 100);
+	prixreduit = prix - temp;
+	return prixreduit;
+
+}
+
+int nombreMedian(int a, int b, int c)
+{
+	if ((a > b && a < c) || (a > c && a < b))
+	{
+		return(a);
+	}
+	else if ((b > a && b < c) || (b > c && b < a))
+	{
+		return(b);
+	}
+	else{ return(c); }
+}
