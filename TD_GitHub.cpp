@@ -1,7 +1,19 @@
 //Fonctions réalisées par l'étudiant 1 :
-bool estMajeur(int age)
+
+
+
+
+
+
+
+
+
+
+//Fonctions réalisées par l'étudiant 2 :
+
+bool estPair(int nb)
 {
-	if (age >= 18)
+	if (nb % 2 == 0)
 	{
 		return(true);
 	}
@@ -11,50 +23,39 @@ bool estMajeur(int age)
 	}
 }
 
-int exposant(int nbre, int exp)
+int sommeNombre(int nb)
 {
-	int resultat = nbre;
-	for (int i=1; i < exp; i++)
-	{
-		resultat = resultat*nbre;
-	
-	}
-	return(resultat);
-}
+    int resultat=0;
 
-float TVA(int prix)
-{
-	float resultat;
-	resultat = prix*1.196;
+	for (int i=nb; i > 0; i--)
+	{
+        resultat = resultat + i;
+	}
 	return (resultat);
 }
 
-int plusGrand(int a, int b, int c)
+float salaireNet(int salaire)
 {
-	if (a > b && a > c)
-	{
-		return(a);
-	}
-	else if (b > a && b > c)
-	{
-		return(b);
-	}
-	else
-	{
-		return(c);
-	}
+    int resultat;
+    resultat=salaire * 1,23;
+    return(resultat);
 }
 
-
-
-
-
-
-//Fonctions réalisées par l'étudiant 2 :
-
-
-
-
+int plusPetit(int a, int b, int c)
+{
+    if(a < b && a < c)
+    {
+        return(a);
+    }
+    else if(b < a && b < c)
+    {
+        return(b);
+    }
+    else
+    {
+        return(c);
+    }
+}
 
 
 
